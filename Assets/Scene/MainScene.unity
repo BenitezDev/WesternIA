@@ -901,6 +901,35 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091260620}
+--- !u!1 &1227951901 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1527503396567766, guid: 37d3ec5b338c5ac4594aa3e262881060,
+    type: 2}
+  m_PrefabInternal: {fileID: 255260692}
+--- !u!114 &1227951910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227951901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940ba94b7c10d46488f1620d7b528f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costShoot: 1
+  costMove: 1
+--- !u!114 &1227951911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227951901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c46a91d8dddd44cb5b4553d6c9f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1385529527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1133,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dangerCovers: []
   safeCovers: []
+--- !u!1 &1547535033 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1658619749916140, guid: ef6049074c4bf9a49a93363f39d691de,
+    type: 2}
+  m_PrefabInternal: {fileID: 1740805592}
+--- !u!114 &1547535042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547535033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940ba94b7c10d46488f1620d7b528f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costShoot: 1
+  costMove: 1
+--- !u!114 &1547535043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547535033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c46a91d8dddd44cb5b4553d6c9f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1565774937 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1657393309121860, guid: aef9243a4cc1cc9479f55c4bd744186f,
+    type: 2}
+  m_PrefabInternal: {fileID: 111603531}
+--- !u!114 &1565774946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565774937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940ba94b7c10d46488f1620d7b528f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costShoot: 1
+  costMove: 1
+--- !u!114 &1565774947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565774937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c46a91d8dddd44cb5b4553d6c9f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650637161 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1486585097577174, guid: c9350aedfe34ec741826f99562deb28a,

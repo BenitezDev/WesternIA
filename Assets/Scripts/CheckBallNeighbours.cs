@@ -9,6 +9,7 @@ public class CheckBallNeighbours : MonoBehaviour
 	public BallCover[] allCovers;
 	
 	[SerializeField] private  float minDistanceToBeNeighbours = 12;
+	public static float maxDistance = 0;
 	
 	private void Start()
 	{
@@ -25,9 +26,12 @@ public class CheckBallNeighbours : MonoBehaviour
 			
 			for (int j = 0; j < this.allCovers.Length; j++)
 			{
+				
 				// Distance <= minDistanceToBeNeighbours
 				var distance = 
 					Vector3.Distance(currentCover.transform.position, this.allCovers[j].transform.position);
+				if (distance > maxDistance) maxDistance = distance;
+				
 				if ( distance <= this.minDistanceToBeNeighbours)
 				{
 					// Not the same cover
@@ -51,5 +55,7 @@ public class CheckBallNeighbours : MonoBehaviour
 				}
 			}
 		}
+
+		
 	}
 }

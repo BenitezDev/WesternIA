@@ -21,8 +21,9 @@ public class PCLocomotion : MonoBehaviour
     /// Rotation speed of the player
     /// </summary>
     [SerializeField]
-    private float rotationSpeed = 180;     
+    private float rotationSpeed = 180;
 
+    public static Vector3 PlayerPosition;
     
     void Update()
     {
@@ -42,5 +43,6 @@ public class PCLocomotion : MonoBehaviour
         transform.Rotate(0, y, 0);
         transform.Translate(x, 0, z);
 
+        PlayerPosition = transform.position;
     }
 }

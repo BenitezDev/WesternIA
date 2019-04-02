@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyDecider : MonoBehaviour
 {
 
-    enum EnemyStates { SearchCover, Fire, RunToCover, LookForBetterWeapon };
+    public enum EnemyStates { MoveTo, Fire };
+   
 
     /// <summary>
     /// Current state of this enemy
