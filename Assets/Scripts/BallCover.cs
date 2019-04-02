@@ -33,6 +33,14 @@ public class BallCover : MonoBehaviour
     /// </summary>
     public CoverType coverType;
 
+    /// <summary>
+    /// Neighbours of this cover
+    /// </summary>
+    public List<BallCover> Neighbours;
+    
+    
+    public Dictionary<BallCover, float> DicNeighbours = new Dictionary<BallCover, float>();
+    
     private void Awake()
     {   
         // Give a unique Id to each instance
@@ -45,4 +53,10 @@ public class BallCover : MonoBehaviour
         CoverManager.instance.safeCovers.Add(this);
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        // 12 is the Neighbours distance
+        Gizmos.DrawWireSphere(transform.position,12);
+    }
 }

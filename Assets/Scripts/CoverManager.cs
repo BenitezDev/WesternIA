@@ -31,6 +31,9 @@ public class CoverManager : MonoBehaviour
     public List<BallCover> safeCovers   = new List<BallCover>();
 
 
+    
+    
+    
 
     /// <summary>
     /// Given a position, it returns the closest cover
