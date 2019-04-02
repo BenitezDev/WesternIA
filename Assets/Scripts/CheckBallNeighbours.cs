@@ -33,17 +33,17 @@ public class CheckBallNeighbours : MonoBehaviour
 					// Not the same cover
 					if (currentCover.id != this.allCovers[j].id)
 					{
-						/*	List of Neighbours:
-						 
-							// Not included before
-							if (!currentCover.Neighbours.Contains(this.allCovers[j]))
-							{
-								currentCover.Neighbours.Add(this.allCovers[j]);
-							}
-						*/
+//							//List of Neighbours:
+//						 
+//							// Not included before
+//							if (!currentCover.Neighbours.Contains(this.allCovers[j]))
+//							{
+//								currentCover.Neighbours.Add(this.allCovers[j]);
+//							}
+						
 
 						// Not in Dictionary
-						if (currentCover.DicNeighbours.ContainsKey(this.allCovers[j]))
+						if (!currentCover.DicNeighbours.ContainsKey(this.allCovers[j]))
 						{
 							currentCover.DicNeighbours.Add(this.allCovers[j],distance);
 						}
