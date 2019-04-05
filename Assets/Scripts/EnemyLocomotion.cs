@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyLocomotion : MonoBehaviour
 {
-
+    [HideInInspector]
     public NavMeshAgent agent;
     
     public bool crouch = false;
@@ -21,10 +21,10 @@ public class EnemyLocomotion : MonoBehaviour
     /// Move the enemy to a certain position
     /// </summary>
     /// <param name="destination">The position the enemy will go</param>
-    public void MoveTo(Vector3 destination)
+    public void MoveTo(BallCover destination)
     {
-        agent.destination = destination;
-        transform.LookAt(destination);
+        agent.destination = destination.transform.position;
+        transform.LookAt(destination.transform.position);
     }
 
     /// <summary>
